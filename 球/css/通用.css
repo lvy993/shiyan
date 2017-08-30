@@ -1,0 +1,46 @@
+body{
+  -webkit-perspective: 1000px;;
+  -moz-perspective: 1000px;;
+  -ms-perspective: 1000px;;
+  perspective: 1000px;;
+}
+div{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+}
+.out{
+  position: relative;
+  margin: 300px 600px;
+  /*开启3d*/
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+
+  -webkit-transition: 100s linear;
+  -o-transition: 100s linear;
+  transition: 100s linear;
+}
+/*.out:hover{
+  -webkit-transform: rotateY(10000deg) rotateY(10deg) ;
+  -ms-transform: rotateY(10000deg) rotateY(10deg);
+  -o-transform: rotateY(10000deg) rotateY(10deg);
+  transform: rotateY(10000deg)  rotateY(10deg);
+}*/
+.out div{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+.out div img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
